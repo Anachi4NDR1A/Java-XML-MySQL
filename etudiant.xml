@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+  <etudiant>
+    <matricule>123</matricule>
+    <nom>boussa</nom>
+    <adresse>lot</adresse>
+    <bourse>100</bourse>
+  </etudiant>
+</bibliotheque>

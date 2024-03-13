@@ -7,7 +7,6 @@ package essai;
 import bean.Etudiant;
 import bean.ListeEtudiants;
 import client.EnregistrementXML;
-import database.ConnexionDatabase;
 import java.util.ArrayList;
 import java.util.List;
 import server.XMLtoDalabase;
@@ -18,9 +17,9 @@ import server.XMLtoDalabase;
  */
 public class InsererUnEtudiant {
      public static void main(String[] args) {
-        insertion("123", "manda", 123, "Lot");
+        insertion("125", "anachi2", 124, "Lot2");
     }
-    public static void insertion(String matricule, String nom, int bourse, String adresse){
+    public static String insertion(String matricule, String nom, int bourse, String adresse){
         boolean trouver = false;
         XMLtoDalabase data = new XMLtoDalabase();
         ListeEtudiants liste = data.recuperationListeEtudiant();
@@ -45,9 +44,10 @@ public class InsererUnEtudiant {
             listeEtudiants.setEtudiants(list_);
             EnregistrementXML enregistrementXML =new EnregistrementXML();
             enregistrementXML.insertEtudiant(listeEtudiants);
+            return "Enregistrement";
         }
         else{
-            System.out.println("Etudiant existe deja");
+            return "ExisteDeja";
         }
     }
 }

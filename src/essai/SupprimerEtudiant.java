@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class SupprimerEtudiant {
     public static void main(String[] args) {
-        supprimer("1231");
+        supprimer("1111");
     }
-    public static void supprimer(String matricule){
+    public static String supprimer(String matricule){
         ListeEtudiants listeEtudiants =  new ListeEtudiants();
         Etudiant etudiant1 = new Etudiant();
         etudiant1.setMatricule(matricule);
@@ -26,7 +26,7 @@ public class SupprimerEtudiant {
         list_.add(etudiant1);
         listeEtudiants.setEtudiants(list_);
         EnregistrementXML enr = new EnregistrementXML();
-        enr.deleteEtudiant(listeEtudiants);
-        
+        String reponse = enr.deleteEtudiant(listeEtudiants);
+        return reponse;
     }
 }

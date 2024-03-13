@@ -6,4 +6,16 @@
     <adresse>lot</adresse>
     <bourse>100</bourse>
   </etudiant>
+  <etudiant>
+    <matricule>127</matricule>
+    <nom>y</nom>
+    <adresse>sg</adresse>
+    <bourse>100</bourse>
+  </etudiant>
+  <etudiant>
+    <matricule>100</matricule>
+    <nom>x</nom>
+    <adresse>tygh</adresse>
+    <bourse>100</bourse>
+  </etudiant>
 </bibliotheque>

@@ -94,7 +94,7 @@ public class EnregistrementXML {
             xmlOutput.output(document, fileOutput);
             fileOutput.close();
 
-            System.out.println("Nouveau Etudiant ajouté avec succès !");
+            System.out.println("Enregistrement succès !");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -106,7 +106,7 @@ public class EnregistrementXML {
          addElement("insertEtudiant.xml", listeEtudiants,"insert");
          addElementForAllEtudiant(listeEtudiants);
     }
-    public void deleteEtudiant( ListeEtudiants listeEtudiants){
+    public String deleteEtudiant( ListeEtudiants listeEtudiants){
         addElement("deleteEtudiant.xml", listeEtudiants,"delete");
         String cheminFichier = "etudiant.xml";
         try {
@@ -130,8 +130,10 @@ public class EnregistrementXML {
             fileOutput.close();
 
             System.out.println("Élément supprimé avec succès !");
+            return "reussie";
         } catch (Exception e) {
             e.printStackTrace();
+            return "error";
         }
     }
 
@@ -146,7 +148,7 @@ public class EnregistrementXML {
             }
         }
     }
-    public void updateEtudiant( ListeEtudiants listeEtudiants){
+    public String updateEtudiant( ListeEtudiants listeEtudiants){
          addElement("updateEtudiant.xml", listeEtudiants,"update");
         String cheminFichier = "etudiant.xml";
 
@@ -174,12 +176,15 @@ public class EnregistrementXML {
             xmlOutput.output(document, fileOutput);
             fileOutput.close();
 
-            System.out.println("Valeur de la bourse modifiée avec succès !");
+            System.out.println("Information modifiée avec succès !");
+            return "reussie";
         } catch (Exception e) {
             e.printStackTrace();
+            return "error";
         }
     }
 
+    @SuppressWarnings("empty-statement")
     public static void modifierValeurBourse(Element racine, String matricule, String nom, String adresse, int bourse) {
         List<Element> elementsEtudiant = racine.getChildren("etudiant");
         for (Element elementEtudiant : elementsEtudiant) {
@@ -192,7 +197,7 @@ public class EnregistrementXML {
                 elementBourse1.setText(String.valueOf(nom));
                 Element elementBourse2 = elementEtudiant.getChild("adresse");
                 elementBourse2.setText(String.valueOf(adresse));
-                return; 
+                /*return*/; 
             }
         }
     }

@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class ModifierUnEtudiant {
     public static void main(String[] args) {
-        mofif("123","boussa", "lot", 100);
+        mofif("125","lala", "lot2", 101);
     }
-    public static void mofif(String matricule, String nom, String adresse, int bourse){
+    public static String mofif(String matricule, String nom, String adresse, int bourse){
         ListeEtudiants listeEtudiants =  new ListeEtudiants();
         Etudiant etudiant1 = new Etudiant();
         etudiant1.setMatricule(matricule);
@@ -29,7 +29,7 @@ public class ModifierUnEtudiant {
         list_.add(etudiant1);
         listeEtudiants.setEtudiants(list_);
         EnregistrementXML enr = new EnregistrementXML();
-        enr.updateEtudiant(listeEtudiants);
-        
+        String reponse = enr.updateEtudiant(listeEtudiants);
+        return reponse;
     }
 }

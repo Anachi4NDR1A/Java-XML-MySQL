@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/essai/Essai.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/client/Client.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/client/EnregistrementXML.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/bean/ListeEtudiants.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/bean/Etudiant.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/server/Serveur.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/essai/Test.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/server/XMLtoDalabase.java</file>
-            <file>file:/C:/Users/Documents/NetBeansProjects/essai/src/database/ConnexionDatabase.java</file>
+            <file>file:/C:/Users/ANDRIANANTENAINA/Documents/NetBeansProjects/JavaavaceBack/src/JavaA/Front.java</file>
+            <file>file:/C:/Users/ANDRIANANTENAINA/Documents/NetBeansProjects/JavaavaceBack/src/database/SocketDatabaseListener.java</file>
+            <file>file:/C:/Users/ANDRIANANTENAINA/Documents/NetBeansProjects/JavaavaceBack/src/bean/ListeEtudiants.java</file>
+            <file>file:/C:/Users/ANDRIANANTENAINA/Documents/NetBeansProjects/JavaavaceBack/src/essai/Test.java</file>
+            <file>file:/C:/Users/ANDRIANANTENAINA/Documents/NetBeansProjects/JavaavaceBack/src/essai/ModifierUnEtudiant.java</file>
         </group>
     </open-files>
 </project-private>
